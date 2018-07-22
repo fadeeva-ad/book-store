@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8.99" height="16.01" viewBox="0 0 8.99 16.01">
+  <defs>
+    <style>
+      .a {
+        isolation: isolate;
+      }
+
+      .b {
+        fill: #ef529f;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <title>Ресурс 2</title>
+  <g class="a">
+    <path class="b" d="M2.45,8,8.7,1.69a1,1,0,0,0,0-1.4,1,1,0,0,0-1.39,0L.7,7a1,1,0,0,0-.43.24A1,1,0,0,0,0,8a1,1,0,0,0,.26.8A1.08,1.08,0,0,0,.7,9l6.61,6.67a1,1,0,0,0,1.39,0,1,1,0,0,0,0-1.4Z"/>
+  </g>
+</svg>
