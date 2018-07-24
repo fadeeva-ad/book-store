@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="57" height="42" viewBox="0 0 57 42">
+  <defs>
+    <style>
+      .a {
+        fill: #d7569c;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <title>box</title>
+  <path class="a" d="M55,0H2A2,2,0,0,0,0,2v8a2,2,0,0,0,2,2H3V40a2,2,0,0,0,2,2H51a2,2,0,0,0,2-2V12h2a2,2,0,0,0,2-2V2A2,2,0,0,0,55,0ZM35,2V25s-6-4.12-6-4-8,5-8,5V11h0V2ZM55,8v2H51V40H5V10H2V2H19v8H9a1,1,0,0,0,0,2H19V29s10-4.92,10-5,8,5,8,5V12H47a1,1,0,0,0,0-2H37V2H55Z"/>
+</svg>

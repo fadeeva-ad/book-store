@@ -1,18 +1,18 @@
-extends templates/layout-home.pug
+extends templates/main-layout.pug
 
 block meta
-  title Home
-  meta(name='description', content='Home page!')
+	title Home
+	meta(name='description', content='Home page!')
 
-//- block append head
-//-   link(rel="stylesheet", href="some.css")
-//-   script(src='some.js')
+	//- block append head
+	//-   link(rel="stylesheet", href="some.css")
+	//-   script(src='some.js')
 
 block nav
-  -var selected = 'Книги';
-  +main-nav(selected)
-
-
-
-//- block append page-bottom
-//-   script(src='some.js')
+	-var selected = 'Книги';
+	+main-nav(selected)
+	+main-slider()
+	+main-tab()
+	+pangination()
+	//- block append page-bottom
+	//-   script(src='some.js')

@@ -1,0 +1,73 @@
+mixin main-tab()
+	section.b-main-tab.b-container
+		ul.b-main-tab__wrap
+			li.b-main-tab__item
+				//- не забудь добавить нижний бордер в каждую ссылку при активной вкладке
+				a.b-main-tab__link(href=href='#page1') Все
+			li.b-main-tab__item
+				a.b-main-tab__link(href=href='#page2') Маркетинг
+			li.b-main-tab__item
+				a.b-main-tab__link(href=href='#page3') Научпоп
+			li.b-main-tab__item
+				a.b-main-tab__link(href=href='#page4') Бизнес
+			li.b-main-tab__item
+				a.b-main-tab__link(href=href='#page5') Творчество
+			li.b-main-tab__item
+				a.b-main-tab__link(href=href='#page6') Бизнес
+		ul.b-main-tab__content
+			li.b-main-tab__item#page1
+				.b-main-tab__book
+					.b-main-tab__img-box
+						img.b-main-tab__img(src="../img/tab-img1.png", alt="image1")
+					p.b-main-tab__name Латеральная логика
+					p.b-main-tab__discr Головоломный путь к нестандартному решению
+					p.b-main-tab__price 500
+					span.b-main-tab__price--mod Р
+					.b-main-tab__img-box
+						img.b-main-tab__img(src="../img/tab-img2.png", alt="image1")
+					p.b-main-tab__name Путеводитель по лжи
+					p.b-main-tab__discr Критическое мышление в эпоху постправды
+					p.b-main-tab__price 630
+					span.b-main-tab__price--mod Р
+					.b-main-tab__img-box
+						img.b-main-tab__img(src="../img/tab-img3.png", alt="image1")
+					p.b-main-tab__name Дао физики
+					p.b-main-tab__discr Исследование параллелей между современной физикой и восточной философией
+					p.b-main-tab__price 560
+					span.b-main-tab__price--mod Р
+					.b-main-tab__img-box
+						img.b-main-tab__img(src="../img/tab-img4.png", alt="image1")
+					p.b-main-tab__name Не очевидно
+					p.b-main-tab__discr Как выявить тренды раньше других
+					p.b-main-tab__price 365
+					span.b-main-tab__price--mod Р
+					.b-main-tab__img-box
+						img.b-main-tab__img(src="../img/tab-img5.png", alt="image1")
+					p.b-main-tab__name Суперпотребители
+					p.b-main-tab__discr Кто это и почему они так важны для вашего бизнеса
+					p.b-main-tab__price 500
+					span.b-main-tab__price--mod Р
+					.b-main-tab__img-box
+						img.b-main-tab__img(src="../img/tab-img6.png", alt="image1")
+					p.b-main-tab__name Маркетинг в социальных сетях
+					p.b-main-tab__discr 
+					p.b-main-tab__price 630
+					span.b-main-tab__price--mod Р
+					.b-main-tab__img-box
+						img.b-main-tab__img(src="../img/tab-img4.png", alt="image1")
+					p.b-main-tab__name Правильный выбор
+					p.b-main-tab__discr Практическое руководство принятию взвешенных решений
+					p.b-main-tab__price 500
+					span.b-main-tab__price--mod Р
+					.b-main-tab__img-box
+						img.b-main-tab__img(src="../img/tab-img8.png", alt="image1")
+					p.b-main-tab__name Главное в истории искусств
+					p.b-main-tab__discr Ключевые работы,темы,направления,техники
+					p.b-main-tab__price 500
+					span.b-main-tab__price--mod Р
+			li.b-main-tab__item#page2 2
+				//- Продублировать как page1
+			li.b-main-tab__item#page3 3
+			li.b-main-tab__item#page4 4
+			li.b-main-tab__item#page5 5
+			li.b-main-tab__item#page6 6

@@ -5,10 +5,16 @@ mixin main-nav(selected)
       'Книги': '/books.html',
       'Рекомендации': '/recommendations.html',
       'Контакты': '/contact.html'
-    };
+      };
 
   nav.main-nav
-    .main-nav__list(style='list-style: none; display: block text-decoration: one' )
+    .main-nav__wrap-menu
+      .main-nav__menu
+        a.main-nav__cart-container(href='#')
+          img.main-nav__cart(src="../img/cart.svg")
+        a.main-nav__call-container(href='#')
+          img.main-nav__call(src="../img/phone.svg")
+    .main-nav__list
       each val, key in menu
-        li(class= selected.toLowerCase() === key.toLowerCase() ? 'main-nav__item  main-nav__item--active' : 'main-nav__item')
+        a(class= selected.toLowerCase() === key.toLowerCase() ? 'main-nav__item  main-nav__item--active' : 'main-nav__item')
           a(href=val, title=key)= key
