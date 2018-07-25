@@ -9,6 +9,7 @@
 			position: absolute;
 			right: -40px;
 		}
+
 		&__list{
 			display: inline-block;
 			text-decoration:none;
@@ -17,8 +18,10 @@
 			color: #000;
 		}
 
-		&__item{
-			
+		&__item {
+			text-decoration: none;
+			font-family:'MontserratBold';
+			font-size: 25px;
+			color:red;
 		}
-
 }

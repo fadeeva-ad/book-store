@@ -15,6 +15,13 @@ mixin main-nav(selected)
         a.main-nav__call-container(href='#')
           img.main-nav__call(src="../img/phone.svg")
     .main-nav__list
-      each val, key in menu
-        a(class= selected.toLowerCase() === key.toLowerCase() ? 'main-nav__item  main-nav__item--active' : 'main-nav__item')
-          a(href=val, title=key)= key
+
+    each val, key in menu
+      a.main_nav__item(href= val, title= key)= key
+
+        //- a(href= val, title= key, class= selected.toLowerCase() === key.toLowerCase() ? 'main_nav__item main_nav__item--active' : 'main_nav__item')= key
+
+        // li(class= selected.toLowerCase() === key.toLowerCase() ? 'main-nav__item  main-nav__item--active' : 'main-nav__item')
+        //   li(href=val, title=key)= key
+
+
