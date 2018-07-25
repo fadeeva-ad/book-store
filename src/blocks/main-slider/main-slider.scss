@@ -41,7 +41,7 @@
 			font-size: $main-font-size;
 			color: #000;
 			margin: 0;
-			font-family:'Montserrat-Bold';
+			font-family:'MontserratBold';
 			font-weight: 500;
 		}
 
@@ -49,6 +49,7 @@
 			font-size: 40px;
 			color: #000;
 			margin: 0;
+			font-family:'MontserratItalic';
 		}
 		&__more-info{
 			font-size:$main-font-size;
@@ -57,7 +58,8 @@
 		&__item-img{
 			width: 302px;
 			display: inline-block;
-    	vertical-align: middle
+    	vertical-align: middle;
+    	font-family:'MontserratRegular';
 		}
 		&__img{
 			width: 100%;
