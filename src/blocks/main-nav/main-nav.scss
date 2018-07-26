@@ -13,15 +13,16 @@
 		&__list{
 			display: inline-block;
 			text-decoration:none;
-			font-size: 14px;
+			font-size: $secondary-font-size;
 			list-style: none;
 			color: #000;
 		}
 
 		&__item {
 			text-decoration: none;
-			font-family:'MontserratBold';
-			font-size: 25px;
-			color:red;
+			font-family: 'MontserratBold';
+			font-size: $secondary-font-size;
+			color: #000000;
+			margin-right: 5px;
 		}
 }

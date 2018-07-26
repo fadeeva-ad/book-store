@@ -4,6 +4,7 @@
 
 .b-slider {
 	position:relative;
+	background-color:$bg-color;
 
 	// &__navy {
 	// position: absolute;
@@ -27,43 +28,84 @@
 	// 		width: 100%;
 	// 	}
 	// }
-		&__wrap{
-			display: flex;
-	    flex-direction: row;
-	    justify-content: space-around;
-	     padding-top: 52px;
-		}
-		&__item{
-			display: inline-block;
-			padding: 0 86px 0 30px;
-		}
-		&__text {
-			font-size: $main-font-size;
-			color: #000;
-			margin: 0;
-			font-family:'MontserratBold';
-			font-weight: 500;
-		}
+	&__wrap {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		padding-top: 52px;
 
-		&__discr {
-			font-size: 40px;
-			color: #000;
-			margin: 0;
-			font-family:'MontserratItalic';
+		@media (min-width:$screen-хs) {
+			padding-top: 35px;
+			display: block;
 		}
-		&__more-info{
-			font-size:$main-font-size;
-			text-decoration:none;
-			font-family:'MontserratBold';
-		}
-		&__item-img{
-			width: 302px;
-			display: inline-block;
-    	vertical-align: middle;
-    	font-family:'MontserratRegular';
-		}
-		&__img{
-			width: 100%;
-		}
+	}
 
+	&__item {
+		display: inline-block;
+		padding: 0 86px 0 30px;
+
+		@media (min-width:$screen-хs){
+			padding: 0;
+			display: block;
+		}
+	}
+	&__text {
+		width:80%;
+		font-size: $secondary-font-size;
+		color: #000;
+		margin: 0;
+		font-family:'MontserratItalic';
+		font-weight: 500;
+		margin-bottom: 28px;
+
+		@media (min-width:$screen-хs){
+			padding: 0px 0px 30px 30px;
+			display: block;
+			margin: 0;
+			text-align: left;
+		}
+	}
+
+	&__border {
+		display: block;
+		border: 10px solid $border-color;
+		padding: 15px 10px 28px 10px;
+		margin: 0 10px 0;
+		text-align: left;
+	}
+
+	&__discr {
+		font-size: 24px;
+		color: #000;
+		margin: 0;
+		font-family:'MontserratBold';
+		margin-bottom: 40px;
+	}
+
+	&__more-info{
+		font-size:$main-font-size;
+		text-decoration:none;
+		font-family:'MontserratMedium';
+		padding-bottom: 28px;
+	}
+
+	&__item-img{
+		width: 302px;
+		display: inline-block;
+		vertical-align: middle;
+		font-family:'MontserratMedium';
+
+		@media (min-width:$screen-хs){
+			padding: 0;
+			display: none;
+		}
+	}
+
+	&__img{
+		width: 100%;
+
+		@media (min-width:$screen-хs){
+			display: none;
+		}
+	}
 }
