@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Start project.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "stylelint \"src/**/*.scss\" --syntax=scss",
+    "lint-staged": "lint-staged",
     "start": "gulp"
   },
   "author": "Nikolay Gromov",
@@ -47,12 +48,13 @@
     "mkdirp": "^0.5.1",
     "object-fit-images": "^3.2.3",
     "postcss-object-fit-images": "^1.1.2",
-    "stylelint": "^9.3.0",
+    "stylelint": "^9.4.0",
     "ttf2woff": "^2.0.1",
     "ttf2woff2": "^2.0.3",
     "vinyl-buffer": "^1.0.0"
   },
   "dependencies": {
+    "aos": "^3.0.0-beta.4",
     "jquery": "^3.1.1",
     "jquery-migrate": "^3.0.0",
     "object-fit-images": "^3.2.3",

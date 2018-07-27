@@ -1,32 +1,33 @@
-// В этом файле должны быть стили для БЭМ-блока main-slider, его элементов, 
+// В этом файле должны быть стили для БЭМ-блока main-slider, его элементов,
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .b-slider {
-	position:relative;
-	background-color:$bg-color;
+		position: relative;
+		background-color: $bg-color;
+		padding-bottom: 110px;
 
-	// &__navy {
-	// position: absolute;
-	// width:32px;
+	//&__navy {
+	//	position: absolute;
+	//	width:32px;
 
-	// 	&--prev-slide {
-	// 		display: block;
-	// 		background-image: url(../img/arrow-left.svg);
-	// 		top: 53%;
-	// 		left: 43px;
-	// 		width: 100%;
-	// 		border-radius:50%;
-	// 		background-color:#f5aab7;
-	// 		z-index: 10;
-	// 	}
+	//  &--prev-slide {
+	//    display: block;
+	//    background-image: url(../img/arrow-left.svg);
+	//    top: 53%;
+	//    left: 43px;
+	//    width: 100%;
+	//    border-radius:50%;
+	//    background-color:#f5aab7;
+	//    z-index: 10;
+	//  }
 
-	// 	&--next-slide{
-	// 		position: absolute;
-	// 		top: 53%;
-	// 		right: 43px;
-	// 		width: 100%;
-	// 	}
+	//  &--next-slide{
+	//    position: absolute;
+	//    top: 53%;
+	//    right: 43px;
+	//    width: 100%;
+	//  }
 	// }
 	&__wrap {
 		display: flex;
@@ -34,7 +35,7 @@
 		justify-content: space-around;
 		padding-top: 52px;
 
-		@media (min-width:$screen-хs) {
+		@media (min-width: $screen-хs) {
 			padding-top: 35px;
 			display: block;
 		}
@@ -44,22 +45,23 @@
 		display: inline-block;
 		padding: 0 86px 0 30px;
 
-		@media (min-width:$screen-хs){
+		@media (min-width:$screen-хs)	{
 			padding: 0;
 			display: block;
 		}
 	}
-	&__text {
-		width:80%;
+
+	&__text	{
+		width: 80%;
 		font-size: $secondary-font-size;
 		color: #000;
 		margin: 0;
-		font-family:'MontserratItalic';
+		font-family: 'MontserratItalic';
 		font-weight: 500;
 		margin-bottom: 28px;
 
-		@media (min-width:$screen-хs){
-			padding: 0px 0px 30px 30px;
+		@media (min-width:$screen-хs)	{
+			padding: 0 0 30px 30px;
 			display: block;
 			margin: 0;
 			text-align: left;
@@ -68,7 +70,7 @@
 
 	&__border {
 		display: block;
-		border: 10px solid $border-color;
+		border: 10px solid $main-color;
 		padding: 15px 10px 28px 10px;
 		margin: 0 10px 0;
 		text-align: left;
@@ -78,33 +80,33 @@
 		font-size: 24px;
 		color: #000;
 		margin: 0;
-		font-family:'MontserratBold';
+		font-family: 'MontserratBold';
 		margin-bottom: 40px;
 	}
 
-	&__more-info{
-		font-size:$main-font-size;
-		text-decoration:none;
-		font-family:'MontserratMedium';
+	&__more-info {
+		font-size: $main-font-size;
+		text-decoration: none;
+		font-family: 'MontserratMedium';
 		padding-bottom: 28px;
 	}
 
-	&__item-img{
+	&__item-img {
 		width: 302px;
 		display: inline-block;
 		vertical-align: middle;
-		font-family:'MontserratMedium';
+		font-family: 'MontserratMedium';
 
-		@media (min-width:$screen-хs){
+		@media (min-width:$screen-хs)	{
 			padding: 0;
 			display: none;
 		}
 	}
 
-	&__img{
+	&__img {
 		width: 100%;
 
-		@media (min-width:$screen-хs){
+		@media (min-width: $screen-хs) {
 			display: none;
 		}
 	}
