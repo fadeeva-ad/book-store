@@ -11,8 +11,10 @@ block meta
 block nav
 	-var selected = 'Книги';
 	+main-nav(selected)
+	//- block append page-bottom
+	//-   script(src='some.js')
+
+block content
 	+main-slider()
 	+main-tab()
 	+pangination()
-	//- block append page-bottom
-	//-   script(src='some.js')
