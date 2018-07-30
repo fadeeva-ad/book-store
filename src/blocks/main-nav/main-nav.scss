@@ -1,28 +1,28 @@
-// В этом файле должны быть стили для БЭМ-блока main-nav, его элементов, 
+// В этом файле должны быть стили для БЭМ-блока main-nav, его элементов,
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .main-nav {
 	display: inline-block;
-	position:relative;
-		&__wrap-menu {
-			position: absolute;
-			right: -40px;
-		}
+	position: relative;
 
-		&__list{
-			display: inline-block;
-			text-decoration:none;
-			font-size: $secondary-font-size;
-			list-style: none;
-			color: #000;
-		}
+	&__wrap-menu {
+		position: absolute;
+		right: -40px;
+	}
 
-		&__item {
-			text-decoration: none;
-			font-family: 'MontserratBold';
-			font-size: $secondary-font-size;
-			color: #000000;
-			margin-right: 5px;
-		}
+	&__list {
+		display: inline-block;
+		text-decoration: none;
+		font-size: $secondary-font-size;
+		list-style: none;
+		color: #000;
+	}
+
+	&__item {
+		text-decoration: none;
+		font-family: 'MontserratBold';
+		font-size: $secondary-font-size;
+		color: #000000;
+		margin-right: 5px;
+	}
 }

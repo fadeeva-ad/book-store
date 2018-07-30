@@ -1,33 +1,33 @@
 // Подключение своих шрифтов.
 // Не пишите тут ничего, кроме @font-face
 @font-face {
-  font-family: "MontserratBold";
-  src: url("../fonts/Montserrat-Bold.ttf");
-  src: url("../fonts/Montserrat-Bold.eot"), url("../fonts/Montserrat-Bold.otf"), url("../fonts/Montserrat-Bold.woff2");
+  font-family: 'MontserratBold';
+  src: url('../fonts/Montserrat-Bold.ttf');
+  src: url('../fonts/Montserrat-Bold.eot'), url('../fonts/Montserrat-Bold.otf'), url('../fonts/Montserrat-Bold.woff2');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "MontserratItalic";
-  src: url("../fonts/Montserrat-Italic.ttf");
-  src: url("../fonts/Montserrat-Italic.eot"), url("../fonts/Montserrat-Italic.otf"), url("../fonts/Montserrat-Italic.woff2");
+  font-family: 'MontserratItalic';
+  src: url('../fonts/Montserrat-Italic.ttf');
+  src: url('../fonts/Montserrat-Italic.eot'), url('../fonts/Montserrat-Italic.otf'), url('../fonts/Montserrat-Italic.woff2');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "MontserratMedium";
-  src: url("../fonts/Montserrat-Medium.ttf");
-  src: url("../fonts/Montserrat-Medium.eot"), url("../fonts/Montserrat-Medium.otf"), url("../fonts/Montserrat-Medium.woff2");
+  font-family: 'MontserratMedium';
+  src: url('../fonts/Montserrat-Medium.ttf');
+  src: url('../fonts/Montserrat-Medium.eot'), url('../fonts/Montserrat-Medium.otf'), url('../fonts/Montserrat-Medium.woff2');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "MontserratRegular";
-  src: url("../fonts/Montserrat-Regular.ttf");
-  src: url("../fonts/Montserrat-Regular.eot"), url("../fonts/Montserrat-Regular.otf"), url("../fonts/Montserrat-Regular.woff2");
+  font-family: 'MontserratRegular';
+  src: url('../fonts/Montserrat-Regular.ttf');
+  src: url('../fonts/Montserrat-Regular.eot'), url('../fonts/Montserrat-Regular.otf'), url('../fonts/Montserrat-Regular.woff2');
   font-weight: 500;
   font-style: normal;
 }
