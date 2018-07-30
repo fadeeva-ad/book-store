@@ -111,6 +111,8 @@ gulp.task('copy:img', function () {
     return gulp.src(images)
       .pipe(newer(dirs.build + '/img')) // потенциально опасно, к сожалению
       .pipe(rename({dirname: ''}))
+      .pipe(gulp.dest(dirs.build + '/img'))
+      .pipe(webp())
       .pipe(gulp.dest(dirs.build + '/img'));
   }
   else {
