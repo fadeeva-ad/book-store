@@ -1,4 +1,4 @@
-// В этом файле должны быть стили для БЭМ-блока main-slider, его элементов, 
+// В этом файле должны быть стили для БЭМ-блока main-slider, его элементов,
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
@@ -68,7 +68,7 @@
 
 	&__border {
 		display: block;
-		border: 10px solid $border-color;
+		border: 10px solid $main-color;
 		padding: 15px 10px 28px 10px;
 		margin: 0 10px 0;
 		text-align: left;
