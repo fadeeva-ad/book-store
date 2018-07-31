@@ -73,6 +73,10 @@
 		padding: 15px 10px 28px 10px;
 		margin: 0 10px 0;
 		text-align: left;
+
+		@media (max-width:$screen-хs)	{
+		width: auto;
+		}
 	}
 
 	&__discr {

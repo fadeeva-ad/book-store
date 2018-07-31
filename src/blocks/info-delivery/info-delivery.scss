@@ -1,0 +1,56 @@
+// В этом файле должны быть стили для БЭМ-блока info-delivery, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.b-delivery {
+  max-width: 1160px;
+  margin: 0 auto;
+  border: 10px solid $decor-color;
+  padding: 50px 30px;
+  margin-bottom: 115px;
+
+  &__title {
+    font-family: 'MontserratBold';
+    font-size: 30px;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-family: 'MontserratRegular';
+    font-size: $main-font-size;
+    margin: 0;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+
+  &__content {
+    display: inline-block;
+    width: 260px;
+    text-align: center;
+
+    @media (min-width:$screen-хs) {
+        width: auto;
+      }
+  }
+
+  &__img-box {
+    width: 50px;
+    position: relative;
+    left: 40%;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__discr {
+    font-family: 'MontserratRegular';
+    font-size: $secondary-font-size;
+    margin: 0;
+    color: #000000;
+    text-align: middle;
+  }
+}

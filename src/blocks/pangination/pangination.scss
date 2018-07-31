@@ -2,7 +2,19 @@
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
-.pangination {
+.b-pages {
+	max-width: 1160px;
+  margin: 0 auto;
+  padding-bottom: 156px;
+		&__number {
+			list-style: none;
+			display: inline-block;
+		}
 
-  $block-name:                &; // #{$block-name}__element
+		&__link {
+			text-decoration: none;
+			color:#000000;
+			font-size: $main-font-size;
+			font-family: 'MontserratBold';
+		}
 }
