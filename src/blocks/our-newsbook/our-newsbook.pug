@@ -1,2 +1,21 @@
 mixin our-newsbook()
-  div our-newsbook
+  .b-newsbook
+    h2.b-newsbook__title Наши новинки
+    a.b-newsbook__text(href='#') Все новинки
+    .b-newsbook__wrapper
+      .b-newsbook__book
+        .b-newsbook__img-box
+          img.b-newsbook__img(src="../img/tab-img1.png", alt="image1")
+        p.b-newsbook__name Латеральная логика
+        p.b-newsbook__discr Головоломный путь к нестандартному решению
+      .b-newsbook__book
+        .b-newsbook__img-box
+          img.b-newsbook__img(src="../img/tab-img2.png", alt="image1")
+        p.b-newsbook__name Путеводитель по лжи
+        p.b-newsbook__discr Критическое мышление в эпоху постправды
+      .b-newsbook__book
+        .b-newsbook__img-box
+          img.b-newsbook__img(src="../img/tab-img3.png", alt="image1")
+        p.b-newsbook__name Дао физики
+        p.b-newsbook__discr Исследование параллелей между современной физикой и восточной философией
+

@@ -1,9 +1,68 @@
-// В этом файле должны быть стили для БЭМ-блока our-newsbook, его элементов, 
+// В этом файле должны быть стили для БЭМ-блока our-newsbook, его элементов,
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
-.our-newsbook {
+.b-newsbook {
+  margin: 0 auto;
+  width: auto;
+  background: linear-gradient(0deg, $decor-color 73% , #ffffff 27%);
+  padding-bottom: 87px;
+  padding-left: 25px;
+  overflow: hidden;
+  margin-bottom: 20px;
 
-  $block-name:                &; // #{$block-name}__element
+  &__wrapper {
+    display: flex;
+  }
+
+  &__title {
+    font-family: 'MontserratBold';
+    font-size: 30px;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    display: block;
+    font-family: 'MontserratMedium';
+    font-size: $main-font-size;
+    margin: 0;
+    margin-bottom: 20px;
+    text-decoration: none ;
+    color: #292df7 ;
+  }
+  &__book {
+    width: auto;
+    margin-bottom: 48px;
+    margin-right: 40px;
+
+    &--book4 {
+
+    }
+}
+
+  &__img-box{
+    width: 220px;
+    margin-bottom: 40px;
+  }
+
+  &__img {
+    width: 100%;
+
+  }
+
+  &__name {
+    width: auto;
+    font-size: 24px;
+    font-family: 'MontserratBold';
+    margin:0 0 30px 0;
+  }
+
+  &__discr{
+    font-size: $main-font-size;
+    font-family: 'MontserratItalic';
+    margin:0 0 25px 0;
+  }
 
 }

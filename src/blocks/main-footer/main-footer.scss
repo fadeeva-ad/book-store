@@ -2,7 +2,30 @@
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
-.main-footer  {
+.b-main-footer  {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
 
-  $block-name:                &; // #{$block-name}__element
+  &__content {
+    display: block;
+  }
+  &__wrap-menu {
+
+  }
+  &__cart-container {
+    display: none;
+  }
+
+  &__call-container {
+    display: none;
+  }
+
+  &__contacts {
+    text-decoration: none;
+    font-family: 'MontserratBold';
+    font-size: $secondary-font-size;
+    color: #000000;
+  }
 }

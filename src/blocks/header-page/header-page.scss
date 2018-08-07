@@ -3,7 +3,7 @@
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .b-header-page {
-	display:	inline-block;
+	display: inline-block;
 
 	&__wrap-logoarea	{
 		display:	inline-block;
@@ -19,7 +19,7 @@
 	}
 
 	&__content	{
-		display:	inline-block;
+		display:	none;
 		font-size:	14px;
 		color:	$small-txt;
 	}
