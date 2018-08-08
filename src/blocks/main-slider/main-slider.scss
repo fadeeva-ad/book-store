@@ -54,7 +54,11 @@
 	}
 
 	&__border {
+<<<<<<< HEAD
 		width: auto;
+=======
+		display: block;
+>>>>>>> add-adaptive-img
 		border: 10px solid $main-color;
 		padding: 15px 10px 28px 10px;
 		margin: 0 10px 0;
@@ -77,10 +81,16 @@
 		padding-bottom: 28px;
 	}
 
+<<<<<<< HEAD
 	&__item-img {
 		display: none;
 		width: auto;
 		padding: 0;
+=======
+	&__item-img{
+		width: 302px;
+		display: inline-block !important;
+>>>>>>> add-adaptive-img
 		vertical-align: middle;
 		font-family: 'MontserratMedium';
 

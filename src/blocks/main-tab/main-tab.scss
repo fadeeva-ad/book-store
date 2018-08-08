@@ -6,6 +6,7 @@
 	font-family: 'MontserratMedium';
   padding-bottom: 80px;
 
+<<<<<<< HEAD
 		&__container {
 			background-color: $main-color;
 		}
@@ -18,6 +19,73 @@
   	display: flex;
   	justify-content: space-between;
     overflow: hidden;
+=======
+.b-main-tab {
+    font-size: $main-font-size ;
+    font-family: 'MontserratMedium';
+
+        &__container {
+            background-color: $main-color;
+        }
+
+        &__wrap {
+            margin: 0 auto;
+        max-width: 1160px;
+        padding: 15px 0 10px 30px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+
+        }
+        &__tab {
+            margin-right: 30px;
+        }
+
+        &__link {
+            text-decoration: none;
+}
+        &__content {
+        text-align: left;
+        list-style: none;
+        font-size: 0;
+
+        @media (min-width:$screen-хs)   {
+                padding: 0 24px;
+                display: block;
+            }
+        }
+        &__item {
+
+        }
+        &__book {
+
+        }
+        &__img-box{
+            width: 220px;
+        }
+        &__img {
+            width: 100%;
+        }
+        &__name {
+            font-size: 24px;
+            font-family: 'MontserratBold';
+            margin:0 0 30px 0;
+        }
+        &__discr{
+            font-size: $main-font-size;
+            font-family: 'MontserratItalic';
+            margin:0 0 25px 0;
+        }
+        &__price {
+            font-size: $main-font-size;
+            font-family: 'MontserratBold';
+            margin: 0;
+            // &--mod {
+            //  font-size: $main-font-size;
+            //  font-family: 'MontserratBold';
+            // }
+        }
+>>>>>>> add-adaptive-img
 
 		}
 
