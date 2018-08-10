@@ -38,6 +38,7 @@ const buffer = require('vinyl-buffer');
 const merge = require('merge-stream');
 const wait = require('gulp-wait');
 const htmlbeautify = require('gulp-html-beautify');
+const babel = require('gulp-babel');
 
 // Перечисление и настройки плагинов postCSS, которыми обрабатываются стилевые файлы
 let postCssPlugins = [
@@ -211,7 +212,8 @@ gulp.task('clean', function () {
 gulp.task('js', function () {
   if(jsList.length) {
     return gulp.src(jsList)
-      .pipe(plumber({ errorHandler: onError }))             // не останавливаем автоматику при ошибках
+      .pipe(plumber({ errorHandler: onError }))      // не останавливаем автоматику при ошибках
+      .pipe(babel( {presets: ['env'] }))
       .pipe(concat('script.min.js'))                        // конкатенируем все файлы в один с указанным именем
       .pipe(uglify())                                       // сжимаем
       .pipe(gulp.dest(dirs.build + '/js'));                 // записываем
