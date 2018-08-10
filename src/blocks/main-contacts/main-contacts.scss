@@ -1,0 +1,56 @@
+// В этом файле должны быть стили для БЭМ-блока main-contacts, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.main-contacts {
+  max-width: 320px;
+  margin: 0 auto;
+  background-color: $bg-color;
+  padding: 0 30px 28px 30px;
+
+  &__title {
+    font-family: 'MontserratBold';
+    font-size: 50px;
+    margin: 0;
+    padding-top: 35px;
+    padding-bottom: 47px;
+  }
+  &__list {
+    font-family: 'MontserratMedium';
+    font-size: $main-font-size;
+    margin: 0;
+    padding: 0 0 0 21px;
+    color: #000000;
+    list-style: none;
+  }
+
+  &__item {
+    margin-bottom: 28px;
+    position: relative;
+  }
+
+  &__item:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+
+  &__item::before {
+    content:'';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #020efb;
+    border-radius: 50%;
+    top: 6px;
+    left: -18px;
+  }
+
+  &__img-box {
+    width: auto;
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}

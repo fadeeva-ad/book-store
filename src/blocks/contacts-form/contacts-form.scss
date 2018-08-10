@@ -1,0 +1,77 @@
+// В этом файле должны быть стили для БЭМ-блока contacts-form, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.contacts-form {
+  position: relative;
+  max-width: 320px;
+  margin: 0 auto;
+  border: 10px solid $main-color;
+  padding: 60px 13px;
+  margin-bottom: 115px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  &::before {
+    content:"";
+    position: absolute;
+    width: 150px;
+    height: 10px;
+    background-color: #ffffff;
+    top: -10px;
+    left: 49px;
+  }
+
+  &::after {
+    content:"";
+    position: absolute;
+    width: 110px;
+    height: 10px;
+    background-color: #ffffff;
+    bottom: -10px;
+    right: 50px;
+  }
+
+  &__title {
+    font-family: 'MontserratBold';
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  &__txt {
+    font-family: 'MontserratRegular';
+    font-size: $main-font-size;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+  }
+
+  &__form {
+
+  }
+  &__mail {
+
+  }
+  &__message {
+
+  }
+  &__checkbox {
+
+  }
+  &__agree {
+
+  }
+  &__link {
+    text-decoration: none;
+  }
+  &__btn {
+    color:#ffffff;
+    font-family: 'MontserratBold';
+    font-size: $main-font-size;
+    display: block;
+    text-decoration: none;
+    background-color: #1f1f1f;
+    padding:15px 102px 20px 105px;
+    text-align:center;
+  }
+}
