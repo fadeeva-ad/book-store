@@ -1,9 +1,63 @@
-// В этом файле должны быть стили для БЭМ-блока main-recomend, его элементов, 
+// В этом файле должны быть стили для БЭМ-блока main-recomend, его элементов,
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .main-recomend {
+	background-color: $bg-color;
 
-  $block-name:                &; // #{$block-name}__element
+	&__mainblock {
+		width: 890px;
+		display: grid;
+		grid-template-areas:
+		'item__1 item__2 item__2'
+		'item__3 item__2 item__2'
+		'item__3 item__4 item__5'
+		'item__6 item__6 item__6';
+	  grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 300px 1fr 1fr;
+		grid-gap: 10px;
+	}
+	&__item {
+		border-radius: 1px;
+	}
+	&__1 {
+		grid-area: item__1;
+		background-color: pink;
+		height: 180px;
+	}
+	&__2 {
+		grid-area: item__2;
+		background-color: green;
+	}
+	&__3 {
+		grid-area: item__3;
+		background-color: red;
+	}
+	&__4 {
+		grid-area: item__4;
+		background-color: black;
+		height: 180px;
+	}
+	&__5 {
+		grid-area: item__5;
+		background-color: yellow;
+		height: 180px;
+	}
+	&__6 {
+		grid-area: item__6;
+		background-color: pink;
+		height: 170px;
+	}
 
+	&__title {
+		margin: 0;
+		font-size: 40px;
+		padding-top: 40px;
+		padding-bottom: 55px;
+		font-family: 'MontserratBold';
+	}
+
+	&__promo {
+		width: auto;
+	}
 }
