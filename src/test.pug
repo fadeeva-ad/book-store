@@ -1,0 +1,42 @@
+extends templates/main-layout.pug
+
+block meta
+		title Home
+		meta(name='description', content='Home page!')
+
+//- block append head
+//-   link(rel="stylesheet", href="some.css")
+//-   script(src='some.js')
+
+//- block nav
+//-   -var selected = 'Книги';
+//-   +main-nav(selected)
+
+block content
+	.books
+		.books__content
+			.books__list
+				.books__item
+					strong.books__title Правила мозга
+					p.books__price 700
+				.books__item
+					strong.books__title Правила мозга
+					p.books__price 700
+				.books__item
+					strong.books__title Правила мозга
+					p.books__price 700
+								.books__item
+										strong.books__title Правила мозга
+										p.books__price 700
+								.books__item
+										strong.books__title Правила мозга
+										p.books__price 700
+				button.btn.j-view-books Показать следующее
+
+				.book__pagination
+		+pangination()
+						|пагинация
+
+
+//- block append page-bottom
+//-   script(src='some.js')

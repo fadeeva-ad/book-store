@@ -1,5 +1,15 @@
 extends templates/main-layout.pug
 
 block meta
-    title Home
-    meta(name='description', content='Home page!')
+		title Home
+		meta(name='description', content='Home page!')
+
+block nav
+		-var selected = 'Рекомендации';
+		+main-nav(selected)
+		//- block append page-bottom
+		//-   script(src='some.js')
+block content
+	.wrapper
+		+main-recomend()
+		+price-block()

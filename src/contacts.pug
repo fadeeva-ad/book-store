@@ -1,0 +1,18 @@
+extends templates/main-layout.pug
+
+block meta
+    title Home
+    meta(name='description', content='Books')
+    //- block append head
+    //-   link(rel="stylesheet", href="some.css")
+    //-   script(src='some.js')
+
+block nav
+    -var selected = 'Контакты';
+    +main-nav(selected)
+    //- block append page-bottom
+    //-   script(src='some.js')
+block content
+    +main-contacts()
+    +contacts-form()
+    +contacts-promo()
