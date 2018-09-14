@@ -1,26 +1,29 @@
 mixin main-nav(selected)
+  header.b-header-page
+    .b-header-page__wrap-logoarea
+      a.b-header-page__logo-box(href='#')
+        img.b-header-page__logo(src="../img/logo.png")
+      span.b-header-page__content с 9:00 до 19:00
+    -
+      var menu = {
+        'Книги': '/books.html',
+        'Рекомендации': '/recommendations.html',
+        'Контакты': '/contacts.html'
+        };
+    nav.main-nav
+      .main-nav__wrap-menu
+        .main-nav__menu
+          a.main-nav__cart-container(href='#')
+            img.main-nav__cart(src="../img/cart.svg")
+          a.main-nav__call-container(href='#')
+            img.main-nav__call(src="../img/phone.svg")
+      .main-nav__list
+        each val, key in menu
+          a.main-nav__item(href= val, title= key)= key
 
-  -
-    var menu = {
-      'Книги': '/books.html',
-      'Рекомендации': '/recommendations.html',
-      'Контакты': '/contacts.html'
-      };
 
-  nav.main-nav
-    .main-nav__wrap-menu
-      .main-nav__menu
-        a.main-nav__cart-container(href='#')
-          img.main-nav__cart(src="../img/cart.svg")
-        a.main-nav__call-container(href='#')
-          img.main-nav__call(src="../img/phone.svg")
-    .main-nav__list
+          //- a(href= val, title= key, class= selected.toLowerCase() === key.toLowerCase() ? 'main-nav__item main-nav__item--active' : 'main-nav__item')= key
 
-    each val, key in menu
-      a.main-nav__item(href= val, title= key)= key
-
-        //- a(href= val, title= key, class= selected.toLowerCase() === key.toLowerCase() ? 'main-nav__item main-nav__item--active' : 'main-nav__item')= key
-
-        // li(class= selected.toLowerCase() === key.toLowerCase() ? 'main-nav__item  main-nav__item--active' : 'main-nav__item')
-        //   li(href=val, title=key)= key
+          // li(class= selected.toLowerCase() === key.toLowerCase() ? 'main-nav__item  main-nav__item--active' : 'main-nav__item')
+          //   li(href=val, title=key)= key
 

@@ -1,9 +1,82 @@
-// В этом файле должны быть стили для БЭМ-блока contacts-promo, его элементов, 
+// В этом файле должны быть стили для БЭМ-блока contacts-promo, его элементов,
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
-.contacts-promo {
+.contact-promo {
+	width: auto;
+	height: 312px;
+	position: relative;
+	margin-bottom: 23px;
 
-  $block-name:                &; // #{$block-name}__element
+	@media (min-width: $screen-m) {
+		text-align:center;
+	}
 
+	&__bg {
+		background:url(../img/promo-contacts-1x.jpg), rgba(239, 82, 159, 1); //нужно уточнить на счет цвета
+		height: 312px;
+		background-position-y: 85%;
+    background-position-x: 60%;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    opacity: 0.6;
+	}
+
+	&__line {
+		top: 18%;
+		left: 35%;
+		position: absolute;
+
+		@media (min-width: $screen-m) {
+			top: 17%;
+			left: 45%;
+		}
+	}
+
+	&__line-img {
+		width: 100%;
+	}
+
+	&__img {
+		width: 100%;
+		height: auto;
+	}
+
+	&__wrap {
+		position: absolute;
+		top: 80px;
+		text-align: center;
+
+		@media (min-width: $screen-m) {
+			padding: 0 44px;
+		}
+	}
+
+	&__text {
+		width: auto;
+		font-family: 'MontserratBold';
+		font-size: 24px;
+		color: #ffffff;
+		margin: 0;
+		line-height: 40px;
+
+		@media (min-width: $screen-m) {
+			font-size: $large-font-size;
+			margin-bottom: 35px;
+			padding-top: 40px;
+		}
+	}
+
+	&__address {
+		width: auto;
+		font-family: 'MontserratRegular';
+		font-size: $main-font-size;
+		color: #ffffff;
+		margin: 0;
+		line-height: 30px;
+
+		@media (min-width: $screen-m) {
+			font-size: $main-font-size;
+		}
+	}
 }

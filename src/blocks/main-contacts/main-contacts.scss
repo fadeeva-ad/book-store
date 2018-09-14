@@ -3,10 +3,14 @@
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .main-contacts {
-  max-width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   background-color: $bg-color;
-  padding: 0 30px 28px 30px;
+  padding: 0 30px 46px 30px;
+
+  @media (min-width: $screen-m) {
+      max-width: 768px;
+    }
 
   &__title {
     font-family: 'MontserratBold';
@@ -15,6 +19,7 @@
     padding-top: 35px;
     padding-bottom: 47px;
   }
+
   &__list {
     font-family: 'MontserratMedium';
     font-size: $main-font-size;
@@ -22,11 +27,21 @@
     padding: 0 0 0 21px;
     color: #000000;
     list-style: none;
+
+    @media only screen and (min-width: $screen-m) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
     margin-bottom: 28px;
     position: relative;
+
+    @media only screen and (min-width: $screen-m) {
+      width: 340px;
+    }
   }
 
   &__item:nth-last-child(1) {
@@ -47,10 +62,23 @@
   &__img-box {
     width: auto;
     height: auto;
-    margin-bottom: 40px;
+    margin-bottom: 48px;
+    background-image: url(../img/map-360.webp);
+    background-size: 243%;
+    background-repeat: no-repeat;
+    background-position: 59% 51%;
+
+    @media (min-width: $screen-m) {
+      height: 350px;
+      background-image: url(../img/map-700.webp);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: 0 50%;
+    }
   }
 
   &__img {
     width: 100%;
+    height: auto;
   }
 }

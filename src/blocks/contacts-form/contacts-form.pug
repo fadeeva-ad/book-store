@@ -1,16 +1,20 @@
 mixin contacts-form()
-  .contacts-form
-    h2.contacts-form__title Есть вопросы?
-    p.contacts-form__txt Напишите нам на почту. Отвечаем в течение дня
-    form.contacts-form__form
-      inpit.contacts-form__mail(type='text' name='email' placeholder='Ваша почта')
-      inpit.contacts-form__message(type='text' name='message' placeholder='Сообщение')
-      input.contacts-form__checkbox(type='checkbox')
-      span.contacts-form__agree Я согласен (-на) с
-      a.contacts-form__link(href='#')  политикой конфиденциальности
-      span.contacts-form__agree  и
-      a.contacts-form__link(href='#')  правилами обработки данных
-      a.contacts-form__btn(href='#') Отправить
+	.contacts-form
+		h2.contacts-form__title Есть вопросы?
+		p.contacts-form__txt Напишите нам на почту. Отвечаем в течение дня
+		form.contacts-form__form
+			input.contacts-form__mail(type='email', placeholder='Ваша почта')
+			input.contacts-form__message(type='text', placeholder='Сообщение')
+		.contacts-form__wrapper
+			input#agree.contacts-form__checkbox(type='checkbox')
+			label.contacts-form__label(for='agree')
+			span.contacts-form__agree Я согласен (-на) с
+				a.contacts-form__link(href='#')  политикой конфиденциальности
+				span.contacts-form__agree  и
+				a.contacts-form__link(href='#')  правилами обработки данных
+		a.contacts-form__btn(href='#') Отправить
+
+
 
 
 
