@@ -13,14 +13,14 @@
 	}
 
 	&__bg {
-		background:url(../img/promo-contacts-1x.jpg), rgba(239, 82, 159, 1); //нужно уточнить на счет цвета
-		height: 312px;
-		background-position-y: 85%;
-    background-position-x: 60%;
-    background-repeat: no-repeat;
-    background-blend-mode: multiply;
-    opacity: 0.6;
-    background-size: cover;
+	background:url(../img/promo-contacts-1x.jpg), rgba(239, 82, 159, 1); //нужно уточнить на счет цвета
+	height: 312px;
+	background-position-y: 85%;
+	background-position-x: 60%;
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+	opacity: 0.6;
+	background-size: cover;
 	}
 
 	&__line {
@@ -50,6 +50,13 @@
 
 		@media (min-width: $screen-m) {
 			padding: 0 44px;
+		}
+
+		@media (max-width: $screen-хl) {
+			padding: 0 60px;
+		}
+		@media (min-width: 1400px) {
+			left: 20%;
 		}
 	}
 

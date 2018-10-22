@@ -1,9 +1,7 @@
-// В этом файле должны быть стили для БЭМ-блока main-recomend, его элементов,
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .main-recomend {
 	background-color: $bg-color;
+	margin-right: 30px;
 
 	&__mainblock {
 		width: 890px;
@@ -13,51 +11,136 @@
 		'item__3 item__2 item__2'
 		'item__3 item__4 item__5'
 		'item__6 item__6 item__6';
-	  grid-template-rows: 1fr 2fr 1fr;
-    grid-template-columns: 300px 1fr 1fr;
+		grid-template-rows: 180px 180px 180px;
+		grid-template-columns: 300px 1fr 1fr;
 		grid-gap: 10px;
 	}
+
+	&__img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.mainblock{
+	text-decoration:none;
+	list-style: none;
+	padding: 0;
+  margin: 0;
+
 	&__item {
-		border-radius: 1px;
-	}
-	&__1 {
-		grid-area: item__1;
-		background-color: pink;
-		height: 180px;
-	}
-	&__2 {
-		grid-area: item__2;
-		background-color: green;
-	}
-	&__3 {
-		grid-area: item__3;
-		background-color: red;
-	}
-	&__4 {
-		grid-area: item__4;
-		background-color: black;
-		height: 180px;
-	}
-	&__5 {
-		grid-area: item__5;
-		background-color: yellow;
-		height: 180px;
-	}
-	&__6 {
-		grid-area: item__6;
-		background-color: pink;
-		height: 170px;
+		border-radius: 7px;
+		box-shadow: 2px 2px 20px 1px #c5c6e0;
+		text-decoration:none;
+
+		&--1 {
+			grid-area: item__1;
+			background-color: #ffffff;
+			padding: 20px;
+			line-height: 30px;
+		}
+		&--2 {
+			grid-area: item__2;
+			background-image: url("../img/autumnbook.webp"), url("../img/autumncover.webp");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-blend-mode: multiply;
+			text-align: center;
+			padding: 30px;
+		}
+
+		&--3 {
+			grid-area: item__3;
+			background-image: url("../img/gridbook.webp"), url("../img/gridbookcover.webp");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-blend-mode: multiply;
+		}
+		&--4 {
+			grid-area: item__4;
+			background-color: #ffffff;
+			padding: 20px 15px 10px 15px;
+		}
+		&--5 {
+			grid-area: item__5;
+			background-color: #ce6194;
+			padding: 15px 20px;
+		}
+		&--6 {
+			grid-area: item__6;
+			background-color: pink;
+			background-image: url("../img/oldbook.webp"), url("../img/oldbookcover.webp");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-blend-mode: multiply;
+			background-position-y: 26%;
+			text-align: center;
+			padding: 30px;
+		}
 	}
 
-	&__title {
-		margin: 0;
-		font-size: 40px;
-		padding-top: 40px;
-		padding-bottom: 55px;
+	&__ttl {
 		font-family: 'MontserratBold';
+		font-size: $main-font-size;
+		margin: 0;
+		margin-bottom: 20px;
+
+		&--color {
+			color: #ffffff;
+			font-size: 24px;
+			margin-bottom: 20px;
+		}
+		&--centerttl{
+			margin: 0;
+			padding: 5em 0;
+			color: #ffffff;
+			font-size: 24px;
+			text-align: center;
+		}
+		&--forkids {
+			color: #ffffff;
+			margin: 0;
+			margin-bottom: 15px;
+		}
 	}
 
-	&__promo {
-		width: auto;
+	&__txt {
+		font-family: 'MontserratRegular';
+		font-size: $main-font-size;
+		margin: 0;
+		line-height: 24px;
+
+		&--color {
+			color: #ffffff;
+			margin: 0;
+		}
+		&--marg {
+			margin: 0 0 20px 0;
+		}
+		&--newsect {
+			color: #ffffff;
+			margin: 0;
+			line-height: 25px;
+		}
+	}
+
+	&__link {
+		margin: 0;
+		display: block;
+		text-decoration: none;
+		font-family: 'MontserratRegular';
+		font-size: $main-font-size;
+	}
+
+	&__btn {
+		background-color: #000000;
+		color: #ffffff;
+		padding: 15px;
+		margin: 0;
+		display: block;
+		text-decoration: none;
+		font-family: 'MontserratBold';
+		font-size: $secondary-font-size;
+		text-align:center;
 	}
 }

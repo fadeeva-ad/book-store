@@ -1,13 +1,25 @@
 mixin main-recomend()
 	.main-recomend
-		h2.main-recomend__title Наши рекомендации
-		.main-recomend__mainblock
-			a.main-recomend__item.main-recomend__1(href='#') 1
-			a.main-recomend__item.main-recomend__2(href='#') 2
-			a.main-recomend__item.main-recomend__3(href='#') 3
-			a.main-recomend__item.main-recomend__4(href='#') 4
-			a.main-recomend__item.main-recomend__5(href='#') 5
-			a.main-recomend__item.main-recomend__6(href='#') 6
-		.main-recomend__promo
-			+contacts-promo()
+		ul.main-recomend__mainblock.mainblock
+			li.mainblock__item.mainblock__item--1
+				b.mainblock__ttl Новая статья в блоге
+				p.mainblock__txt.mainblock__txt--marg Посмотрите, как чтение книг меняет восприятие человека.
+				a.mainblock__link(href='#') Читать статью
+
+			li.mainblock__item.mainblock__item--2
+				p.mainblock__ttl.mainblock__ttl--color Книга осени!
+				p.mainblock__txt.mainblock__txt--color Проголосуй за лучшую книгу этой осени
+			li.mainblock__item.mainblock__item--3
+				p.mainblock__ttl.mainblock__ttl--centerttl Наши подборки ваших лучших фотографий у нас
+			li.mainblock__item.mainblock__item--4
+				p.mainblock__ttl Нам важно ваше мнение
+				p.mainblock__txt.mainblock__txt--marg Ставьте пальцы вверх, мыходим знать ваше мнение.
+				a.mainblock__btn(href='#') Проголосовать
+			li.mainblock__item.mainblock__item--5
+				p.mainblock__ttl.mainblock__ttl--forkids Книги для детей
+				p.mainblock__txt.mainblock__txt--newsect У нас появился новый раздел, в котором м подбирвем книги для юных читателей
+			li.mainblock__item.mainblock__item--6
+				p.mainblock__ttl.mainblock__ttl--color У вас есть старые книги?
+				p.mainblock__txt.mainblock__txt--color Приносите их нам и обменяйте на новые.
+
 

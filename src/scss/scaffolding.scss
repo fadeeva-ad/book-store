@@ -13,6 +13,23 @@ body {
 }
 
 .wrapper {
-    display: flex;
-    background-color: $bg-color;
+	display: flex;
+	background-color: $bg-color;
+}
+
+.recommendations-title {
+	margin: 0;
+	font-size: 40px;
+	padding-top: 40px;
+	padding-left: 22px;
+	padding-bottom: 55px;
+	font-family: 'MontserratBold';
+}
+
+.recommendations-wrapper {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
+	background-color: $bg-color;
+	padding: 0 55px 85px 40px;
 }

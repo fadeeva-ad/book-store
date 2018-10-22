@@ -10,6 +10,9 @@ block nav
 		//- block append page-bottom
 		//-   script(src='some.js')
 block content
-	.wrapper
+	h2.recommendations-title Наши рекомендации
+	.recommendations-wrapper
 		+main-recomend()
 		+price-block()
+	.main-recomend__promo
+			+contacts-promo()
