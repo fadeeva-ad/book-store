@@ -1,40 +1,39 @@
 // В этом файле должны быть стили для БЭМ-блока main-slider, его элементов,
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+.main-slider {
+	position: relative;
+	background-color: $bg-color;
+	padding-bottom: 110px;
+	margin: 0 auto;
+	max-width: 320px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 
-.b-slider {
-		position: relative;
-		background-color: $bg-color;
-		padding-bottom: 110px;
+		@media (min-width: $screen-m) {
+			max-width: 768px;
+		}
 
-	//&__navy {
-	//	position: absolute;
-	//	width:32px;
-
-	//  &--prev-slide {
-	//    display: block;
-	//    background-image: url(../img/arrow-left.svg);
-	//    top: 53%;
-	//    left: 43px;
-	//    width: 100%;
-	//    border-radius:50%;
-	//    background-color:#f5aab7;
-	//    z-index: 10;
-	//  }
-
-	//  &--next-slide{
-	//    position: absolute;
-	//    top: 53%;
-	//    right: 43px;
-	//    width: 100%;
-	//  }
-	// }
-	&__wrap {
-		padding-top: 35px;
+		@media (min-width: $screen-хl) {
+			max-width: 1200px;
+		}
+	&__list {
 		display: block;
 	}
 
 	&__item {
+		padding-top: 35px;
+		display: block;
+
+		@media (min-width: $screen-хl) {
+			display: flex;
+			justify-content:space-between;
+			align-items: flex-end;
+		}
+	}
+
+	&__content {
 			padding: 0;
 			display: block;
 	}
@@ -59,6 +58,16 @@
 		padding: 15px 10px 28px 10px;
 		margin: 0 10px 0;
 		text-align: left;
+
+		@media (min-width: $screen-m) {
+			width: 555px;
+			padding: 40px 70px 60px 30px;
+		}
+
+		@media (min-width: $screen-хl) {
+			width: 70%;
+			padding: 40px 70px 60px 30px;
+		}
 	}
 
 	&__discr {
@@ -68,6 +77,10 @@
 		font-family: 'MontserratBold';
 		margin-bottom: 40px;
 		line-height: 1.1;
+
+		@media (min-width: $screen-m) {
+			font-size: 30px;
+		}
 	}
 
 	&__more-info {
@@ -77,17 +90,73 @@
 		padding-bottom: 28px;
 	}
 
-	&__item-img {
+	&__more-info:hover {
+		color: $hover-link;
+	}
+
+	&__more-info:active {
+		color: $active-link;
+	}
+
+	&__img-box {
 		display: none;
-		width: auto;
+		width: 303px;
+		height: auto;
 		padding: 0;
 		vertical-align: middle;
 		font-family: 'MontserratMedium';
 
+		@media (min-width: $screen-m) {
+			display: none;
+		}
+		@media (min-width: $screen-хl) {
+			display: block;
+		}
 	}
 
 	&__img {
 		width: 100%;
+		height: auto;
 
+	}
+
+	&__arrow-left {
+    position: absolute;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    bottom: 40px;
+    left: 30%;
+		background-color: $light-pink;
+		z-index: 10;
+
+		@media (min-width: $screen-m) {
+			position: absolute;
+			top:13em;
+			left:30px;
+		}
+	}
+
+	&__arrow-right {
+    position: absolute;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    bottom: 40px;
+    right: 30%;
+		background-color: $light-pink;
+		z-index: 10;
+
+		@media (min-width: $screen-m) {
+			position: absolute;
+			top:13em;
+			right:30px;
+		}
+	}
+
+	&__arrow-img {
+		position: absolute;
+		top: 12px;
+    left: 15px;
 	}
 }

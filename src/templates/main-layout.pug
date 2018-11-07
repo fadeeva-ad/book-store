@@ -12,15 +12,21 @@ html(class="no-js  page", lang="ru")
 
 		block head
 			link(rel="stylesheet", href="css/style.css")
+			//- link(rel="stylesheet", type="text/javascript" href="../../node_modules/slick-carousel/slick/slick.css")
+			//- link(rel="stylesheet",type="text/javascript", href="../../node_modules/slick-carousel/slick/slick-theme.css")
 			link(rel="shortcut icon", href="/img/favicon.ico", type="image/x-icon")
 			script.
 				document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
 
 	body
-		+b-header-page()
-		block nav
+		.main-layout-wrap
+			+b-header-page()
+			block nav
 		block content
 		+main-footer()
 
-	block page-bottom
-		script(src="js/script.min.js")
+
+		block page-bottom
+			script(src="js/script.min.js")
+			//- script(type="text/html", src="../../node_modules/slick-carousel/slick/slick.min.js")
+

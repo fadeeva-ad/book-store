@@ -1,17 +1,34 @@
 mixin main-slider()
-	section.b-slider.b-container
-		//- start:slider`s arrows
-		//- .b-slider__navy
-		//- 	a.b-slider__navy--next-slide(href='javascript:void(0)')
-		//- 	a.b-slider__navy--prev-slide(href='javascript:void(0)')
-		//- end:slider`s arrows
-		.b-slider__list
-			.b-slider__wrap
-				.b-slider__item
-					p.b-slider__text Новое поступление книги "Симпсоны и их математические секреты"
-					.b-slider__border
-						p.b-slider__discr Для поклонников сериала «Симпсоны» и для всех, кому интересна математика.
-						a.b-slider__more-info(href='javascript:void(0)') Хочу узнать о книге больше
-				.b-slider__item-img
-					img.b-slider__img(src="img/slider.webp" , alt="simpsons-book")
-
+	section.main-slider
+		.main-slider__list
+			//- 1st slide
+			.main-slider__item
+				.main-slider__content
+					p.main-slider__text Новое поступление книги "Симпсоны и их математические секреты"
+					.main-slider__border
+						p.main-slider__discr Для поклонников сериала «Симпсоны» и для всех, кому интересна математика.
+						a.main-slider__more-info(href='javascript:void(0)') Хочу узнать о книге больше
+				.main-slider__img-box
+					img.main-slider__img(src="img/simpsons-book.webp" , alt="simpsons-book")
+			//- 2st slide
+			.main-slider__item
+				.main-slider__content
+					p.main-slider__text Новое поступление книги "Симпсоны и их математические секреты"
+					.main-slider__border
+						p.main-slider__discr Для поклонников сериала «Симпсоны» и для всех, кому интересна математика.
+						a.main-slider__more-info(href='javascript:void(0)') Хочу узнать о книге больше
+				.main-slider__img-box
+					img.main-slider__img(src="img/simpsons-book.webp" , alt="simpsons-book")
+			//- 3st slide
+			.main-slider__item
+				.main-slider__content
+					p.main-slider__text Новое поступление книги "Симпсоны и их математические секреты"
+					.main-slider__border
+						p.main-slider__discr Для поклонников сериала «Симпсоны» и для всех, кому интересна математика.
+						a.main-slider__more-info(href='javascript:void(0)') Хочу узнать о книге больше
+				.main-slider__img-box
+					img.main-slider__img(src="img/simpsons-book.webp" , alt="simpsons-book")
+		.main-slider__arrow-right
+			img.main-slider__arrow-img(src="img/arrow-right.svg", alt="arrow-right")
+		.main-slider__arrow-left
+			img.main-slider__arrow-img(src="img/arrow-left.svg", alt="arrow-left")

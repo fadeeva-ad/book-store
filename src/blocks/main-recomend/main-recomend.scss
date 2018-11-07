@@ -143,4 +143,8 @@
 		font-size: $secondary-font-size;
 		text-align:center;
 	}
+	&__btn:hover {
+		background-color: $hover;
+		color: #ffffff;
+	}
 }

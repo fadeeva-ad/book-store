@@ -5,6 +5,7 @@
 @import 'fonts.scss';
 @import 'scaffolding.scss';
 
+
 // Растровый спрайт: примеси-генераторы правил
 // @import './src/blocks/sprite-png/sprite-png.scss';
 // @include sprites($spritesheet-sprites); // Генератор селекторов для всех картинок спрайта
@@ -24,3 +25,4 @@
 @import './src/blocks/main-recomend/main-recomend.scss';
 @import './src/blocks/grid-recomend/grid-recomend.scss';
 @import './src/blocks/price-block/price-block.scss';
+

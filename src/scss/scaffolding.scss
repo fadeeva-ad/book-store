@@ -28,8 +28,24 @@ body {
 
 .recommendations-wrapper {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
 	flex-direction: row;
 	background-color: $bg-color;
 	padding: 0 55px 85px 40px;
+}
+.main-layout-wrap {
+	min-width: 320px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+	padding: 17px 30px 13px 30px;
+
+		@media (min-width: $screen-m) {
+			max-width: 768px;
+		}
+
+		@media (min-width: $screen-хl) {
+			max-width: 1200px;
+		}
 }

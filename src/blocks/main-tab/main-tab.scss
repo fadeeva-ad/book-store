@@ -1,102 +1,101 @@
-// В этом файле должны быть стили для БЭМ-блока main-tab, его элементов,
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 .b-main-tab {
 	font-size: $main-font-size ;
 	font-family: 'MontserratMedium';
-  padding-bottom: 80px;
+	padding-bottom: 80px;
 
-		&__container {
-			background-color: $main-color;
-		}
-
-		&__wrap {
+	&__wrap {
 		margin: 0 auto;
-    width: auto;
-  	padding: 15px 0 10px 30px;
-  	list-style: none;
-  	display: flex;
-  	justify-content: space-between;
-    overflow: hidden;
+		width: auto;
+		padding: 15px 0 10px 30px;
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		overflow: hidden;
+		background-color: $main-color;
 
+	}
+
+	&__tab {
+		margin-right: 30px;
+	}
+
+	&__link {
+		text-decoration: none;
+	}
+
+	&__link:hover {
+		color: $hover-link;
+	}
+
+	&__link:active {
+		border-bottom: 2px solid $special-color;
+		color: $active-link;
+	}
+
+	&__content {
+		max-width: 320px;
+		display: block;
+		margin: 0 auto;
+		text-align: left;
+		list-style: none;
+		font-size: 0;
+		padding: 0 24px;
+
+		@media (min-width: $screen-m) {
+			max-width: 768px;
 		}
+	}
 
-		&__tab {
-			margin-right: 30px;
+	&__item {
+		max-width: 320px;
+
+		@media (min-width: $screen-m) {
+			max-width: 260px;
+			}
+	}
+
+	&__book {
+		width: auto;
+		margin-bottom: 48px;
+
+		&--book4,
+		&--book5 ,
+		&--book6 ,
+		&--book7,
+		&--book8 {
+			display:none;
+
+		@media (min-width: $screen-m) {
+			display:block;
+			}
 		}
+	}
 
-		&__link {
-			text-decoration: none;
-    }
+	&__img-box{
+		width: 260px;
+		margin-bottom: 40px;
+	}
 
-    &__link:active {
-      border-bottom: 2px solid $special-color;
-    }
-		&__content {
-      max-width: 320px;
-      margin: 0 auto;
-      text-align: left;
-      list-style: none;
-      font-size: 0;
-      padding: 0 24px;
-      display: block;
-		}
+	&__img {
+		width: 100%;
+	}
 
-		&__item {
-      max-width: 320px;
-      display:flex;
-      flex-direction:column;
+	&__name {
+		width: auto;
+		font-size: 24px;
+		font-family: 'MontserratBold';
+		margin:0 0 30px 0;
+	}
 
-      // @media (min-width: $screen-хs) {
-      //   padding: 0 24px;
-      //   flex-direction: column;
-      //   flex-wrap: nowrap;
-      // }
-		}
+	&__discr {
+		font-size: $main-font-size;
+		font-family: 'MontserratItalic';
+		margin:0 0 25px 0;
+	}
 
-		&__book {
-      width: auto;
-      margin-bottom: 48px;
-
-      &--book4,
-      &--book5 ,
-      &--book6 ,
-      &--book7,
-      &--book8 {
-        display:none;
-      }
-		}
-
-		&__img-box{
-			width: 220px;
-      margin-bottom: 40px;
-		}
-
-		&__img {
-			width: 100%;
-
-		}
-
-		&__name {
-      width: auto;
-			font-size: 24px;
-			font-family: 'MontserratBold';
-			margin:0 0 30px 0;
-		}
-
-		&__discr{
-			font-size: $main-font-size;
-			font-family: 'MontserratItalic';
-			margin:0 0 25px 0;
-		}
-
-		&__price {
-			font-size: $main-font-size;
-			font-family: 'MontserratBold';
-			margin: 0;
-			// &--mod {
-			// 	font-size: $main-font-size;
-			// 	font-family: 'MontserratBold';
-			// }
-		}
+	&__price {
+		font-size: $main-font-size;
+		font-family: 'MontserratBold';
+		margin: 0;
+	}
 }
